@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenFlis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .promociones, .servicios, .opiniones, .faq {
+            margin-bottom: 40px;
+        }
+        .promociones h2, .servicios h2, .opiniones h2, .faq h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #007BFF;
+            text-align: center;
+        }
+        .plan {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .plan h3 {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+        .plan p {
+            color: #666;
+        }
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        /* Estilos para el botón flotante de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .whatsapp-float img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-float img:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Estilos para la valoración */
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+        }
+        .stars {
+            color: #FFD700;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .rating-text {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>MenFlis</h1>
+        <nav>
+            <a href="#promociones">Promociones</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#opiniones">Opiniones</a>
+            <a href="#faq">Preguntas Frecuentes</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección de Promociones -->
+    <section id="promociones" class="promociones container">
+        <h2>Promociones Destacadas</h2>
+        <div class="plan">
+            <h3>Netflix (15 Días)</h3>
+            <p>Disfruta de Netflix durante 15 días a un precio increíble.</p>
+            <p><strong>Precio: $9.000</strong></p>
+            <a href="https://api.whatsapp.com/send/?phone=573012813278&text=Hola+MenFlis%2C+estoy+interesado+en+el+plan+de+Netflix+de+15+d%C3%ADas." class="btn-whatsapp">COMPRAR AHORA</a>
+        </div>
+        <div class="plan">
+            <h3>Disney+ (30 Días)</h3>
+            <p>Accede a todo el contenido de Disney+ por un mes completo.</p>
+            <p><strong>Precio: $12.000</strong></p>
+            <a href="https://api.whatsapp.com/send/?phone=573012813278&text=Hola+MenFlis%2C+estoy+interesado+en+el+plan+de+Disney%2B+de+30+d%C3%ADas." class="btn-whatsapp">COMPRAR AHORA</a>
+        </div>
+        <div class="plan">
+            <h3>Spotify Premium (30 Días)</h3>
+            <p>Escucha música sin anuncios y descarga tus canciones favoritas.</p>
+            <p><strong>Precio: $9.000</strong></p>
+            <a href="https://api.whatsapp.com/send/?phone=573012813278&text=Hola+MenFlis%2C+estoy+interesado+en+el+plan+de+Spotify+Premium+de+30+d%C3%ADas." class="btn-whatsapp">COMPRAR AHORA</a>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="servicios container">
+        <h2>Nuestros Servicios</h2>
+        <div class="plan">
+            <h3>Netflix</h3>
+            <p>Planes desde 15 días hasta 30 días.</p>
+            <p><strong>Precio: Desde $9.000</strong></p>
+        </div>
+        <div class="plan">
+            <h3>Disney+</h3>
+            <p>Acceso completo a todo el catálogo de Disney+.</p>
+            <p><strong>Precio: Desde $12.000</strong></p>
+        </div>
+        <div class="plan">
+            <h3>Spotify Premium</h3>
+            <p>Disfruta de música sin anuncios y descarga tus canciones.</p>
+            <p><strong>Precio: Desde $9.000</strong></p>
+        </div>
+        <div class="plan">
+            <h3>Amazon Prime Video</h3>
+            <p>Películas, series y contenido exclusivo de Amazon.</p>
+            <p><strong>Precio: Desde $10.000</strong></p>
+        </div>
+    </section>
+
+    <!-- Sección de Opiniones -->
+    <section id="opiniones" class="opiniones container">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="rating">
+            <div class="stars">★★★★☆</div>
+            <div class="rating-text">4.6 de 5 (223 valoraciones)</div>
+        </div>
+        <div class="plan">
+            <h3>Laura Gómez</h3>
+            <p>"Excelente servicio, muy rápido y eficiente. Recomendado 100%."</p>
+        </div>
+        <div class="plan">
+            <h3>Carlos Martínez</h3>
+            <p>"Muy buena atención, resolvieron todas mis dudas al instante."</p>
+        </div>
+        <div class="plan">
+            <h3>Ana López</h3>
+            <p>"Los precios son increíbles y el servicio es impecable."</p>
+        </div>
+    </section>
+
+    <!-- Sección de Preguntas Frecuentes -->
+    <section id="faq" class="faq container">
+        <h2>Preguntas</h2>
+        <div class="plan">
+            <h3>¿Tienes preguntas?</h3>
+            <p>Escríbenos a nuestro WhatsApp: <a href="https://api.whatsapp.com/send/?phone=573012813278">+57 301 281 3278</a>. Estamos disponibles de 11:00 a.m. a 9:00 p.m.</p>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer id="contacto">
+        <p>Contacto: <a href="https://api.whatsapp.com/send/?phone=573012813278">+57 301 281 3278</a></p>
+        <p>Correo: info@menflis.com</p>
+        <p>Horario de atención: Lunes a Domingo, 11:00 a.m. - 9:00 p.m.</p>
+        <p>Síguenos en: 
+            <a href="https://facebook.com/menflis">Facebook</a> | 
+            <a href="https://instagram.com/menflis">Instagram</a>
+        </p>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <div class="whatsapp-float">
+        <a href="https://api.whatsapp.com/send/?phone=573012813278&text=Hola+MenFlis%2C+estoy+interesado+en+sus+servicios." target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    </div>
+</body>
+</html>
